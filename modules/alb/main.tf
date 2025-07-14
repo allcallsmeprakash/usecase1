@@ -84,7 +84,7 @@ resource "aws_lb_listener_rule" "app2" {
   }
   condition {
     path_pattern {
-      values = ["/image", "/image/*"]
+      values = ["/image/*"]
     }
   }
 }
@@ -98,7 +98,7 @@ resource "aws_lb_listener_rule" "app3" {
   }
   condition {
     path_pattern {
-      values = ["/register", "/register/*"]
+      values = ["/register/*"]
     }
   }
 }
